@@ -15,7 +15,7 @@ public class SensorGraph {
         //create and configure the window
         JFrame window = new JFrame();
         window.setTitle("Sound Sensor Graph");
-        window.setSize(900,700);
+        window.setSize(900, 700);
         window.setLayout(new BorderLayout());
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -28,12 +28,6 @@ public class SensorGraph {
         window.add(topPanel, BorderLayout.NORTH);
 
         //populate the drop-down box
-
-        SerialPort[] port
-
-        //show the window
-        window.setVisible(true);
-
+        //SerialPort[] portName = SerialPort[].getCommPorts();
     }
-
 }
