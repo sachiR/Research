@@ -2,8 +2,7 @@ import java.awt.BorderLayout;
 
 import javax.swing.*;
 
-import org.jfree.chart.*;
-import org.jfree.data.xy.*;
+import org.jfree.data.xy.XYSeries;
 
 import com.fazecast.jSerialComm.SerialPort;
 
@@ -33,9 +32,6 @@ public class SensorGraph {
 		
 		//create the line graph
 		XYSeries series = new XYSeries("Sound Sensor Readings");
-		XYSeriesCollection dataset = new XYSeriesCollection(series); 
-		JFreeChart chart = ChartFactory.createXYLineChart("Sound Sensor Readings", "Time(seconds)", "Value", dataset);
-		window.add(new ChartPanel(chart), BorderLayout.CENTER);
 		
 		
 		// show the window

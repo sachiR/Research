@@ -2,9 +2,6 @@ import java.awt.BorderLayout;
 
 import javax.swing.*;
 
-import org.jfree.chart.*;
-import org.jfree.data.xy.*;
-
 import com.fazecast.jSerialComm.SerialPort;
 
 public class SensorGraph {
@@ -30,13 +27,6 @@ public class SensorGraph {
 		for(int i =0; i < portNames.length; i++){
 			portList.addItem(portNames[i].getSystemPortName());
 		}
-		
-		//create the line graph
-		XYSeries series = new XYSeries("Sound Sensor Readings");
-		XYSeriesCollection dataset = new XYSeriesCollection(series); 
-		JFreeChart chart = ChartFactory.createXYLineChart("Sound Sensor Readings", "Time(seconds)", "Value", dataset);
-		window.add(new ChartPanel(chart), BorderLayout.CENTER);
-		
 		
 		// show the window
 		window.setVisible(true);
