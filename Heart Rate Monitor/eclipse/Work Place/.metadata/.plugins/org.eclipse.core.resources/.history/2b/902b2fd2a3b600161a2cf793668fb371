@@ -78,8 +78,6 @@ public class SensorGraph {
 					chosenPort.closePort();
 					portList.setEnabled(true);
 					connectButton.setText("Connect");
-					series.clear();
-					x = 0;
 				}
 			}
 		});

@@ -11,7 +11,7 @@ void setup(){
 
 void loop(){
   sound = analogRead(AOPin);//the arduino takes continuous readings from the microphone
+  Serial.println(sound);
   delay(100);
-  }
 }
 
