@@ -7,10 +7,6 @@ import org.jfree.data.xy.*;
 
 import com.fazecast.jSerialComm.SerialPort;
 
-/**
- * Created by Sachi on 30/11/2016.
- */
-
 public class SensorGraph {
 
 	public static void main(String[] args) {
