@@ -1,0 +1,18 @@
+import javax.swing.*;
+
+/**
+ * Created by Sachi on 30/11/2016.
+ */
+public class ModifiedSensorGraph {
+
+	public static void main(String[] args) {
+		//create and configure the window
+		JFrame window = new JFrame();
+		
+		//show and exit window
+		window.setVisible(true);
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+
+}

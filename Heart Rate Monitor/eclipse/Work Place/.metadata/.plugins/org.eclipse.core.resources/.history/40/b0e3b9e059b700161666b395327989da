@@ -1,0 +1,67 @@
+import java.awt.*;
+import javax.swing.*;
+
+/**
+ * Created by Sachi on 30/11/2016.
+ */
+
+public class ModifiedSensorGraph {
+	//defining JFrames, JPanels, JLabels, and variables
+	JFrame window = new JFrame();
+	Container con = window.getContentPane();
+	JPanel northPanel = new JPanel();
+	JPanel centrePanel = new JPanel();
+	JPanel southPanel = new JPanel();
+	
+	JLabel titleLbl = new JLabel("Heart Rate Monitor");
+	
+	Color mainColour = new Color(201,229,232);
+	Font mainFont = new Font("Serif", Font.BOLD, 40);
+	
+	
+	public ModifiedSensorGraph(){
+		//create and configure the window
+		window.setTitle("Heart Rate Monitor System");
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setSize(900, 600);
+		window.setVisible(true);
+		
+		con.setBackground(mainColour);
+		con.setLayout(new BorderLayout());
+		
+		//print the Heading
+		headingPrint();
+	}
+
+	private void headingPrint() {
+		con.add(northPanel, BorderLayout.NORTH);
+		northPanel.setLayout(new FlowLayout());
+		northPanel.setBackground(mainColour);
+		titleLbl.setFont(mainFont);
+		
+		northPanel.add(titleLbl);
+		
+		//connecting to the port
+		portConnector();
+	}
+
+
+	private void portConnector() {
+		//create a drop-down box and connect button, then place them at the centre of the window
+		JComboBox<String> portList = new JComboBox<String>();
+		JButton connectButton = new JButton("Connect");	
+		
+		centrePanel.add(portList);
+		centrePanel.add(connectButton);
+		
+		con.add(centrePanel, BorderLayout.CENTER);
+		
+	}
+
+	public static void main(String[] args ){
+		new ModifiedSensorGraph();
+	}
+}
+
+
+

@@ -1,0 +1,26 @@
+import java.awt.*;
+import javax.swing.*;
+
+/**
+ * Created by Sachi on 30/11/2016.
+ */
+
+public class ModifiedSensorGraph {
+	JFrame window = new JFrame();
+	
+	
+	public ModifiedSensorGraph(){
+		//create and configure the window
+		window.setTitle("Heart Rate Monitor System");
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setSize(900, 600);
+		window.setVisible(true);
+	}
+
+	public static void main(String[] args ){
+		new ModifiedSensorGraph();
+	}
+}
+
+
+

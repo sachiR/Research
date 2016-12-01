@@ -1,0 +1,37 @@
+import java.awt.*;
+import javax.swing.*;
+
+/**
+ * Created by Sachi on 30/11/2016.
+ */
+
+public class ModifiedSensorGraph extends JFrame {
+	Container con = getContentPane();
+    JPanel north = new JPanel();
+    JPanel centre = new JPanel();
+    JPanel east = new JPanel();
+    JPanel west = new JPanel();
+    JPanel south = new JPanel();
+    JPanel lbls = new JPanel();
+    
+	Color mainColor = new Color(15, 55, 119);
+	Font mainFont = new Font("Arial", Font.ITALIC, 22);
+	
+	public ModifiedSensorGraph(){
+        super("Heart-Rate Monitor System");
+        setDefaultCloseOperation(ModifiedSensorGraph.EXIT_ON_CLOSE);
+        con.setBackground(mainColor);
+        pack();
+        setVisible(true);
+    }
+	 
+	 public static void main(String args[]){
+	        new ModifiedSensorGraph();
+	    }
+
+	}
+
+
+
+
+
