@@ -1,0 +1,31 @@
+import java.awt.BorderLayout;
+import java.awt.event.*;
+import java.util.Scanner;
+
+import javax.swing.*;
+
+import org.jfree.chart.*;
+import org.jfree.data.xy.*;
+
+
+/**
+ * Created by Sachi on 01/12/2016.
+ */
+
+public class BMPGraph {
+	
+	
+	public static void main(String[] args) {
+		//create and configure the window
+		JFrame window = new JFrame();
+		window.setTitle("Heart Rate Monitor");
+		window.setSize(900,600);
+		window.setLayout(new BorderLayout());
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		// show the window
+		window.setVisible(true);
+		
+		
+	}
+}
