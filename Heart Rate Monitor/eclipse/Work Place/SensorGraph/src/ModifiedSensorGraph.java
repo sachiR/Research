@@ -62,6 +62,15 @@ public class ModifiedSensorGraph {
 		centrePanel.setBackground(mainColour);
 		
 		window.add(centrePanel, BorderLayout.CENTER);
+		
+		//populate the drop-down box
+		SerialPort[] portNames = SerialPort.getCommPorts();
+		for(int i =0; i < portNames.length; i++){
+			portList.addItem(portNames[i].getSystemPortName());
+		}
+		
+		centrePanel.add(portList);
+		
 	}
 
 	public static void main(String[] args ){
