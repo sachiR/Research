@@ -1,10 +1,9 @@
-package research.graph;
-
-
 import javax.sound.sampled.*;
+import javax.swing.*;
 import java.io.ByteArrayOutputStream;
 
-public class waveForm {
+public class waveForm extends JFrame{
+
 
  public static void main(String[] args) {
      AudioFormat format = new AudioFormat(AudioFormat.Encoding.PCM_SIGNED, 44100, 16, 2, 4, 44100, false);
