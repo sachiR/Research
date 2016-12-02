@@ -19,7 +19,7 @@ public class bpmGraph extends JFrame{
    }
 
     private void soundCapture() {
-        AudioFormat format = new AudioFormat(AudioFormat.Encoding.PCM_SIGNED, 44100, 16, 2, 4, 44100, false);
+        AudioFormat format = new AudioFormat(AudioFormat.Encoding.PCM_SIGNED, 10000, 16, 2, 4, 10000, false);
         try {
             DataLine.Info info = new DataLine.Info(SourceDataLine.class, format);
             final SourceDataLine sourceLine = (SourceDataLine) AudioSystem.getLine(info);
@@ -38,7 +38,10 @@ public class bpmGraph extends JFrame{
                     sourceLine.start();
                     while(true)
                     {
+                        byte[] audioSignalBytes;
+
                         sourceLine.write(out.toByteArray(),0,out.size());
+                        System.out.println();
 
                     }
                 }
@@ -61,15 +64,16 @@ public class bpmGraph extends JFrame{
 
             targetThread.start();
             System.out.println("Started Recording");
-            Thread.sleep(5000);
+            Thread.sleep(1000);
             targetLine.stop();
             targetLine.close();
 
             System.out.println("Ended Recording");
-            System.out.println("started Play Back");
+            System.out.println("--------------------------");
+            System.out.println("Started Play Back");
 
             sourceThread.start();
-            Thread.sleep(5000);
+            Thread.sleep(1000);
             sourceLine.stop();
             sourceLine.close();
             System.out.println("Ended Play Back");
