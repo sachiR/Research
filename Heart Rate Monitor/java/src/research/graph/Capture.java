@@ -61,15 +61,12 @@ public class Capture extends JFrame {
     private void captureAudio() {
         try {
             final AudioFormat format = getFormat();
-            DataLine.Info info = new DataLine.Info(
-                    TargetDataLine.class, format);
-            final TargetDataLine line = (TargetDataLine)
-                    AudioSystem.getLine(info);
+            DataLine.Info info = new DataLine.Info(TargetDataLine.class, format);
+            final TargetDataLine line = (TargetDataLine) AudioSystem.getLine(info);
             line.open(format);
             line.start();
             Runnable runner = new Runnable() {
-                int bufferSize = (int)format.getSampleRate()
-                        * format.getFrameSize();
+                int bufferSize = (int)format.getSampleRate() * format.getFrameSize();
                 byte buffer[] = new byte[bufferSize];
 
                 public void run() {
