@@ -68,10 +68,10 @@ void draw(){
   stroke(0,255,0);
     
   //the graph 
-  for (int i = 0; i < x.length - 1; i++){
-    line(x[i],y[i],x[i+1],y[i+1]);
+  //for (int i = 0; i < x.length - 1; i++){
+    //line(x[i],y[i],x[i+1],y[i+1]);
     //line( i, height, i, height - spectrum[i]*height*5 );
-  }
+  //}
     
   popMatrix();
 }
