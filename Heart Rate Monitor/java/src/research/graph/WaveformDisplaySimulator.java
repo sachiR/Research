@@ -17,7 +17,7 @@ public class WaveformDisplaySimulator {
             JFrame frame = new JFrame("Waveform Display Simulator");
             frame.setBounds(200,200, 500, 350);
 
-            File file = new File(args[0]);
+            File file = new File(args[60]);
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new BufferedInputStream (new FileInputStream (file)));
 
 //            WaveformPanelContainer container = new WaveformPanelContainer();
