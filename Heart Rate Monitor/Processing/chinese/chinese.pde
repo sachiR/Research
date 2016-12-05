@@ -30,14 +30,8 @@ void draw()
  
 
     fill(255);
-    text("0V",10,310);
-    text("5V",10,54);
-    text("0sec",530,340);
-    text("-10sec",30,340);
-    fill(0,255,0);
-    text(val/255.0*5,560,100);
-     
-
+    text("BPM",530,340);
+  
     pushMatrix();
     translate(50,300);
     scale(1,-1);

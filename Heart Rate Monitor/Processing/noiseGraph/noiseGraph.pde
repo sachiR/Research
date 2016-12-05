@@ -1,7 +1,6 @@
 import processing.sound.*;
 
-AudioIn input;
-Amplitude analyzer;
+AudioIn inpu
 // TIME
 float t = 0.0;
 int xPos = 1;         // horizontal position of the graph
