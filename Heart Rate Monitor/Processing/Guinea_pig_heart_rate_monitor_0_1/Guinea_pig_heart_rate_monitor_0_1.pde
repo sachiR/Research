@@ -21,6 +21,7 @@ void setup() {
   
   // start the Audio Input
   input.start();
+  
   amp.input(input);
   
   // Patch the input to an volume analyzer
