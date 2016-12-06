@@ -21,7 +21,6 @@ void setup() {
   
   // start the Audio Input
   input.start();
-  
   amp.input(input);
   
   // Patch the input to an volume analyzer
@@ -34,8 +33,10 @@ void setup() {
 void draw(){ 
   background(0);
   float ampAnalyzer =amp.analyze();
-  println(ampAnalyzer);
-  
+  println("amplitute = " + ampAnalyzer);
+  val = ampAnalyzer * 1700;
+  println("value = " + ampAnalyzer);
+  println("--------------------");
  
   for (int i = 0; i < y.length - 1; i++){
     y[i] = y[i+1];
