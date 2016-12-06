@@ -1,12 +1,8 @@
 import processing.sound.*;
-import ddf.minim.*;
-import ddf.minim.analysis.*;
 
-//FFT fft;
 AudioIn input;
-Amplitude analyzer;
-Minim minim;
-//BeatDetect beat;
+Amplitude amp;
+
 int bands = 512;
 float[] spectrum = new float[bands];
 float val;
@@ -16,29 +12,19 @@ int BPM;
 
 void setup() {
   //create the window
-  //frameRate(50);                   //20msec
   size(600, 350);
   textSize(20);
   
-  //minim = new Minim(this);
-  
-  // Start listening to the microphone
-  // Create an Audio input and grab the 1st channel
-  //fft = new FFT(this, bands);
+  // Create an Input stream which is routed into the Amplitude analyzer
+  amp = new Amplitude(this);
   input = new AudioIn(this,0);
+  
   // start the Audio Input
   input.start();
-  //input = minim.getLineIn();
   
-  // a beat detection object song SOUND_ENERGY mode with a sensitivity of 10 milliseconds
-  //beat = new BeatDetect();
-  
-  // create a new Amplitude analyzer
-  //analyzer = new Amplitude(this);
+  amp.input(input);
   
   // Patch the input to an volume analyzer
-  //analyzer.input(input);
-  //fft.input(input);
   for (int i = 0; i < x.length; i++){
     x[i] = i;
     y[i] = 128;
@@ -47,8 +33,9 @@ void setup() {
 
 void draw(){ 
   background(0);
-  //beat.detect(input.mix);
-  //fft.analyze(spectrum);
+  float ampAnalyzer =amp.analyze();
+  println(ampAnalyzer);
+  
  
   for (int i = 0; i < y.length - 1; i++){
     y[i] = y[i+1];
@@ -70,7 +57,6 @@ void draw(){
   //the graph 
   for (int i = 0; i < x.length - 1; i++){
     line(x[i],y[i],x[i+1],y[i+1]);
-    //line( i, height, i, height - spectrum[i]*height*5 );
   }
     
   popMatrix();

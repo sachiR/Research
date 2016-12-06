@@ -2,6 +2,7 @@ import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
 import java.io.ByteArrayOutputStream;
+import java.util.Scanner;
 
 /**
  * Created by Sachi on /2/12/2016.
@@ -31,22 +32,6 @@ public class bpmGraph extends JFrame{
 
             final ByteArrayOutputStream out = new ByteArrayOutputStream();
 
-            Thread sourceThread = new Thread()
-            {
-                @Override public void run()
-                {
-                    sourceLine.start();
-                    while(true)
-                    {
-                        byte[] audioSignalBytes;
-
-                        sourceLine.write(out.toByteArray(),0,out.size());
-                        System.out.println();
-
-                    }
-                }
-            };
-
             Thread targetThread = new Thread()
             {
                 @Override public void run()
@@ -61,6 +46,24 @@ public class bpmGraph extends JFrame{
                     }
                 }
             };
+
+            Thread sourceThread = new Thread()
+            {
+                @Override public void run()
+                {
+                    sourceLine.start();
+                    Scanner scanner = new Scanner(readBytes.getInputStream());
+                    while(true)
+                    {
+                        byte[] audioSignalBytes;
+
+                        sourceLine.write(out.toByteArray(),0,out.size());
+                        System.out.println();
+
+                    }
+                }
+            };
+
 
             targetThread.start();
             System.out.println("Started Recording");

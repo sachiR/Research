@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SensorGraph.java&quot; tooltip=&quot;SensorGraph/src/SensorGraph.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SensorGraph/src/SensorGraph.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BMPGraph.java&quot; tooltip=&quot;SensorGraph/src/BMPGraph.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/SensorGraph/src/BMPGraph.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;counter.java&quot; tooltip=&quot;referenced examples/src/counter.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/referenced examples/src/counter.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_bU5FgbaUEeaDDY_ULcv_4A" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_b7DGkbaUEeaDDY_ULcv_4A" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="697" height="735">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_bU5FgbaUEeaDDY_ULcv_4A" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_b7DGkbaUEeaDDY_ULcv_4A" label="%trimmedwindow.label.eclipseSDK" x="-7" y="0" width="697" height="735">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -11,7 +11,6 @@
     <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1480465934952"/>
     <persistedState key="show_in_time" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;show_in_time/>"/>
     <tags>topLevel</tags>
-    <tags>shellMaximized</tags>
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_b7DGkbaUEeaDDY_ULcv_4A" elementId="org.eclipse.ui.ide.perspectivestack" selectedElement="_cKvIYLaUEeaDDY_ULcv_4A">
       <tags>MinimizedByZoom</tags>
       <children xsi:type="advanced:Perspective" xmi:id="_cKvIYLaUEeaDDY_ULcv_4A" elementId="org.eclipse.jdt.ui.JavaPerspective" selectedElement="_cKvvcLaUEeaDDY_ULcv_4A" label="Java" iconURI="platform:/plugin/org.eclipse.jdt.ui/$nl$/icons/full/eview16/jperspective.png">
@@ -151,7 +150,7 @@
       <children xsi:type="basic:PartStack" xmi:id="_JVp9IbayEeaDDY_ULcv_4A" elementId="PartStack@650f0d69" selectedElement="_XFeL8LeKEeavE6Pm3r28uA">
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_XFeL8LeKEeavE6Pm3r28uA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SensorGraph.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SensorGraph.java&quot; partName=&quot;SensorGraph.java&quot; title=&quot;SensorGraph.java&quot; tooltip=&quot;SensorGraph/src/SensorGraph.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SensorGraph/src/SensorGraph.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;392&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SensorGraph.java&quot; partName=&quot;SensorGraph.java&quot; title=&quot;SensorGraph.java&quot; tooltip=&quot;SensorGraph/src/SensorGraph.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SensorGraph/src/SensorGraph.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;150&quot; selectionLength=&quot;59&quot; selectionOffset=&quot;2247&quot; selectionTopPixel=&quot;601&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -309,7 +308,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_b9joALaUEeaDDY_ULcv_4A" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_FwjWALgjEea4utqJFmhpcw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_bV39A7aUEeaDDY_ULcv_4A"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_OiIVwLtXEeadOsz86dRhZA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_bV39A7aUEeaDDY_ULcv_4A"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_b9nSYLaUEeaDDY_ULcv_4A" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -333,7 +332,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_b9pHkLaUEeaDDY_ULcv_4A" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_FwnncLgjEea4utqJFmhpcw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_bV1gt7aUEeaDDY_ULcv_4A"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_OiN1ULtXEeadOsz86dRhZA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_bV1gt7aUEeaDDY_ULcv_4A"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_b9puoLaUEeaDDY_ULcv_4A" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -2211,7 +2210,7 @@
   <addons xmi:id="_bU5FkraUEeaDDY_ULcv_4A" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_bU5Fk7aUEeaDDY_ULcv_4A" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_bVCPcLaUEeaDDY_ULcv_4A" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_N5MtgbtXEeadOsz86dRhZA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_bVpTcLaUEeaDDY_ULcv_4A" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_bVp6gLaUEeaDDY_ULcv_4A" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
